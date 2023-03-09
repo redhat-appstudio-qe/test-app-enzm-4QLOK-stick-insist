@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-ukys
+  namespace: build-e2e-kxrw-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:f158489d3ae0b66961193a9cf815fd3abe177ffed0f7762b36ce097b6b8e6294
+        name: my-python
+        resources: {}
+status: {}
